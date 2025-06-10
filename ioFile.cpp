@@ -28,4 +28,15 @@ int main() {
     //menunjuk ke sebuah nama file
     infile.open("confohfile.txt");
     cout << ">= Mmembuka dan membaca file " << endl;
+    //jika file ada maka
+    if (infile.is_open())
+    {
+        //melakukan perulangan setiap baris
+        while (getline(infile, baris))
+        {
+            //menampilkan baris
+            cout << baris << '\n';
+        }
+        //menutup file
+    }
 }
