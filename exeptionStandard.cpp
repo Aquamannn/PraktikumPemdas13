@@ -1,5 +1,5 @@
 #include <iostream>
-#include <exeption> 
+#include <exception> 
 // untuk obyek exception yang akan digunakan
 #include <array>
 //untuk obyek array yang akan digunakan
@@ -19,7 +19,7 @@ int main ()
         cout << e.what() << endl;
         /*akan di eksekusi karna array data hanya memiliki 3 elemen */
     }
-    cout << "baris proram terakhir" << endl;
+    cout << "baris program terakhir" << endl;
     /*penanda 2: bahwa program di jalankan tanpa berhenti meskipun terjadi kesalahan*/
     return 0;
 }
