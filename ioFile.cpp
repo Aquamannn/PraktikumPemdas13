@@ -21,5 +21,11 @@ int main() {
         //menulis dan memasukkan nilai 'baris' ke dalam file 
         outfile << baris << endl;
     }
-    
+    //selesai dalam menulis sekarang tutup file
+    outfile.close();
+    // membuka file dalam mode membaca
+    ifstream infile;
+    //menunjuk ke sebuah nama file
+    infile.open("confohfile.txt");
+    cout << ">= Mmembuka dan membaca file " << endl;
 }
