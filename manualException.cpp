@@ -9,8 +9,12 @@ int main()
         cout << "Pernyataan ini tidak akan di eksekusi" << endl;
     }
     catch (int a) {
-        //blok ini akan di eksekusi
+        //blok iniakan di eksekusi
         cout << "Pengecualian akan di eksekusi" << endl;
     }
-    
+    catch(...){
+        /*jika selain interger maka block ini akan dieksekusi*/
+        cout << "Default Pengecualian dieksekusi" << endl;
+    }
+    return 0;
 }
